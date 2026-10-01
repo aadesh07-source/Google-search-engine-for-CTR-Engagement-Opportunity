@@ -1,0 +1,51 @@
+# === Environment & secrets ===
+.env
+.env.*
+!.env.example
+
+# === Data & artifacts (raw) ===
+/data/
+artifacts/raw/
+*.parquet
+!frontend/public/data/*.json
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+
+# === Node / Frontend ===
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Testing / Coverage ===
+.coverage
+htmlcov/
+.pytest_cache/
+coverage/
+
+# === Misc ===
+*.log
+.kilo/
